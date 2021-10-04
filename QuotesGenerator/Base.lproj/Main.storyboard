@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuotesGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="명언 생성기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1g-Cp-owY">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbr-XX-FGF">
+                                <rect key="frame" x="20" y="105" width="374" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbR-ex-dFL">
+                                        <rect key="frame" x="20" y="20" width="334" height="140"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZp-qm-QWz">
+                                        <rect key="frame" x="20" y="180" width="334" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79705240679173828" green="0.89064100169643912" blue="0.68770314453414405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="VbR-ex-dFL" firstAttribute="leading" secondItem="Qbr-XX-FGF" secondAttribute="leading" constant="20" id="DGm-BQ-Sp0"/>
+                                    <constraint firstAttribute="height" constant="200" id="DWM-9b-kgy"/>
+                                    <constraint firstItem="VbR-ex-dFL" firstAttribute="top" secondItem="Qbr-XX-FGF" secondAttribute="top" constant="20" id="EvX-Ov-gsu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="QcG-pt-fRS"/>
+                                    <constraint firstItem="TZp-qm-QWz" firstAttribute="leading" secondItem="Qbr-XX-FGF" secondAttribute="leading" constant="20" id="Vy2-So-WXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZp-qm-QWz" secondAttribute="trailing" constant="20" id="eok-bI-xxK"/>
+                                    <constraint firstAttribute="bottom" secondItem="TZp-qm-QWz" secondAttribute="bottom" constant="20" id="jR7-PC-I64"/>
+                                    <constraint firstItem="TZp-qm-QWz" firstAttribute="top" secondItem="VbR-ex-dFL" secondAttribute="bottom" constant="20" id="s44-jm-pVS"/>
+                                    <constraint firstAttribute="trailing" secondItem="VbR-ex-dFL" secondAttribute="trailing" constant="20" id="sgq-0J-3MH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-oC-fy3">
+                                <rect key="frame" x="20" y="325" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name=".AppleSDGothicNeoI-Regular" family=".Apple SD Gothic NeoI" pointSize="15"/>
+                                <state key="normal" title="명언 생성"/>
+                                <connections>
+                                    <action selector="tapQuoteGeneratorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPO-9F-Fej"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Rd-r6-QbX"/>
+                            <constraint firstItem="Qbr-XX-FGF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4aq-ZL-fgz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y1g-Cp-owY" secondAttribute="trailing" constant="20" id="5mZ-1h-VlN"/>
+                            <constraint firstItem="y1g-Cp-owY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AD1-el-7eA"/>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="top" secondItem="Qbr-XX-FGF" secondAttribute="bottom" constant="20" id="Met-Rx-rCX"/>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N6s-F6-XYT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qbr-XX-FGF" secondAttribute="trailing" constant="20" id="NIn-c9-H6V"/>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFO-2k-7P0"/>
+                            <constraint firstItem="Qbr-XX-FGF" firstAttribute="top" secondItem="y1g-Cp-owY" secondAttribute="bottom" constant="20" id="XuA-W4-hgB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qbr-XX-FGF" secondAttribute="trailing" constant="20" id="aGW-lR-4yl"/>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="asx-Fh-xDi"/>
+                            <constraint firstItem="Qbr-XX-FGF" firstAttribute="top" secondItem="y1g-Cp-owY" secondAttribute="bottom" constant="20" id="f4F-6l-7cd"/>
+                            <constraint firstItem="y1g-Cp-owY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mB4-gc-Nhc"/>
+                            <constraint firstItem="jXS-oC-fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nMG-U0-CqS"/>
+                            <constraint firstItem="Qbr-XX-FGF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yVl-vk-Biu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LabelView" destination="Qbr-XX-FGF" id="UkH-lp-vxL"/>
+                        <outlet property="nameLabel" destination="TZp-qm-QWz" id="6hz-Ra-ahL"/>
+                        <outlet property="quoteLabel" destination="VbR-ex-dFL" id="lWX-qw-6EJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
